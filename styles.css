@@ -1,1 +1,6 @@
 /*  your css code here. If applicable */
+You can solve this problem using a loop that starts at 0 and end
+s at num. You’ll need to initialize two variables to represent 
+the current and next numbers in the Fibonacci sequence. 
+Then, in each iteration of the loop, you’ll update these 
+variables to move through the sequence.

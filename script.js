@@ -1,15 +1,10 @@
 function fibonacci(num) {
 // your code here
-	if (num === 1) {
-		return 0;
-	}
-	if (num === 2) {
-		return 1;
-	}
 	
-    let x = fibonacci(num) + fibonacci(num -1);
-
-	return x;
+	for (let index = 0; index < num; index++) {
+		let currentV = index , nextV = index + 1;
+	}
+	 return nextV;
 }
 
 module.exports = fibonacci;
