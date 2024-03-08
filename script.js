@@ -1,12 +1,11 @@
 function fibonacci(num) {
 // your code here
-	let currentV = 0 , nextV = 1, sum;
-	for (let index = 0; index < num; index++) {
-		sum = currentV + nextV;
-		currentV = nextV;
-		nextV = sum;
-	}
-	 return nextV;
+	if (num == 1)
+		return 0;
+	if (num == 2)
+		return 1;
+	return fibonacci(num - 1) + fibonacci(num - 2);
 }
+console.log("Fibonacci(5): " + fibonacci(5));
 
 module.exports = fibonacci;
