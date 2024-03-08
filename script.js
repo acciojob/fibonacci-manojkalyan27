@@ -1,8 +1,10 @@
 function fibonacci(num) {
 // your code here
-	
+	let currentV = 0 , nextV = 1, sum;
 	for (let index = 0; index < num; index++) {
-		let currentV = index , nextV = index + 1;
+		sum = currentV + nextV;
+		currentV = nextV;
+		nextV = sum;
 	}
 	 return nextV;
 }
