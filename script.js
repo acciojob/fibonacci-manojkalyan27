@@ -6,7 +6,7 @@ function fibonacci(num) {
             currentV = nextV;
             nextV = sum;
         }
-        return (num === 0 || 1 ? currentV : nextV);
+        return (num === 0 || num === 1 ? currentV : nextV);
     }
     
     module.exports = fibonacci;
